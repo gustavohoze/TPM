@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: whitesmoke;
+}
+body {
+  margin: 25px;
+  font-family: "Poppins";
+  font-weight: 500;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+div[id] {
+  background: rgba(128, 128, 128, 0.441);
+  padding: 10px;
+  border-radius: 7px;
+  min-height: 15vh;
+}
+
+div[id] *{
+  background-color: rgba(128, 128, 128, 0.737);
+  border: 1px solid red;
+  padding: 4px;
+  margin: 8px;
+  font-family: inherit;
+}
+
+div[id] h1:first-child{
+color: white;
+}
+
+input{
+    color: rgba(245, 245, 245, 0.588);
+}
+::placeholder{
+    color: rgba(245, 245, 245, 0.588);
+}
+
+#formElement form div[id] {
+    min-height: unset; /* Removes the earlier min-height */
+    height: fit-content;
+}
+#formElement form div[id] label{
+border: none;
+}
+
+textarea, select {
+    width: 98%;
+    padding: 6px;
+    font-family: inherit;
+    background-color: rgba(245, 245, 245, 0.1);
+    color: rgba(245, 245, 245, 0.9);
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 16px;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(128, 128, 128, 0.7);
+    color: whitesmoke;
+}
+
+/* Selectors */
+.classSelector {
+    color: green;
+  }
+  #idSelector {
+    color: red;
+  }
+  
+  /* Attributes */
+  /* #attributesElement div {
+    margin: 10px 10px;
+  } */
+  
+  /* Box Model */
+  .box {
+    padding: 20px;
+    margin: 10px 0;
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+  }
+  
+  /* Display Properties */
+  .blockElement {
+    display: block;
+    background-color: lightcoral;
+    margin-bottom: 10px;
+  }
+  .inlineElement {
+    display: inline;
+    background-color: lightgreen;
+    padding: 5px;
+  }
+  
+  /* Pseudo Classes */
+  button:hover {
+    background-color: yellow;
+  }
+  button:active {
+    background-color: orange;
+  }
+  input:focus {
+    border: 2px solid blue;
+    outline: none;
+  }
+  
+  /* FontAwesome */
+#fontAwesomeElement i {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 24px;
+    margin: 10px;
+  }
+  
+  /* Fonts */
+  .customFont {
+    font-family: 'Poppins', sans-serif;
+  }
+  .styledFont {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  /* Flexbox */
+  .flexContainer {
+    display: flex;
+    gap: 10px;
+  }
+  .flexContainer div {
+    background-color: lightgray;
+    padding: 10px;
+  }
+  
+  /* Grid */
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-columns: 2fr;
+    grid-auto-rows: 2fr;
+    height: 500px;
+  }
+  .gridContainer div:first-child{
+    grid-row: 1 / span 2;
+    grid-column: 1 / 3;
+  }
+
+  .gridContainer div {
+    background-color: lightpink;
+    padding: 10px;
+  }
+  
+  /* Transform */
+  .transformBox {
+    transition: transform 0.3s;
+  }
+  .transformBox:hover {
+    transform: scale(1.05) translateY(-10px);
+  }
+  
+  /* Positions */
+  .relativeBox {
+    position: relative;
+    background-color: lightblue;
+    padding: 10px;
+  }
+  .absoluteBox {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: lightcoral;
+    padding: 10px;
+  }
+  .fixedBox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightgreen;
+    padding: 10px;
+  }
+  
+  /* Z-Index */
+  .zIndexContainer {
+    position: relative;
+  }
+  .zLow {
+    position: absolute;
+    z-index: 1;
+    background-color: lightblue;
+    padding: 10px;
+    top: 10px;
+    left: 10px;
+  }
+  .zHigh {
+    position: absolute;
+    z-index: 2;
+    background-color: lightcoral;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    div[id] .responsiveBox {
+      background-color: lightcoral;
+    }
+  }
+  @media (min-width: 601px) {
+    div[id] .responsiveBox {
+      background-color: lightgreen;
+    }
+  }
+  

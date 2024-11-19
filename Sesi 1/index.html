@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/683096f42b.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="divElement">
+      <h1>Div Element</h1>
+      <div>Ini contoh element div</div>
+      <div>Ini contoh element div</div>
+      <div>Ini contoh element div</div>
+    </div>
+    <div id="spanElement">
+      <h1>Span Element</h1>
+      <span>Ini contoh span 1</span>
+      <span>Ini contoh span 2</span>
+      <span>Ini contoh span 3</span>
+    </div>
+    <div id="headingElement">
+      <h1>Heading Element</h1>
+      <h1>Ini Heading Level 1</h1>
+      <h2>Ini Heading Level 2</h2>
+      <h3>Ini Heading Level 3</h3>
+      <h4>Ini Heading Level 4</h4>
+      <h5>Ini Heading Level 5</h5>
+      <h6>Ini Heading Level 6</h6>
+    </div>
+    <div id="formElement">
+      <h1>Form Element</h1>
+      <form action="#formElement" id="inputElement">
+        <!-- Input: Text -->
+        <div id="textInput">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" placeholder="Masukkan nama Anda" />
+        </div>
+
+        <!-- Input: Email -->
+        <div id="emailInput">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Masukkan email Anda" />
+        </div>
+
+        <!-- Input: Password -->
+        <div id="passwordInput">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Masukkan password Anda"
+          />
+        </div>
+
+        <!-- Input: Number -->
+        <div id="numberInput">
+          <label for="umur">Umur:</label>
+          <input type="number" id="umur" placeholder="Masukkan umur Anda" />
+        </div>
+
+        <!-- Input: Date -->
+        <div id="dateInput">
+          <label for="tanggalLahir">Tanggal Lahir:</label>
+          <input type="date" id="tanggalLahir" />
+        </div>
+
+        <!-- Input: Tel -->
+        <div id="telInput">
+          <label for="telp">Nomor Telepon:</label>
+          <input
+            type="tel"
+            id="telp"
+            placeholder="Masukkan nomor telepon Anda"
+          />
+        </div>
+
+        <!-- Input: URL -->
+        <div id="urlInput">
+          <label for="website">Website:</label>
+          <input
+            type="url"
+            id="website"
+            placeholder="Masukkan URL website Anda"
+          />
+        </div>
+
+        <!-- Input: Search -->
+        <div id="searchInput">
+          <label for="search">Cari:</label>
+          <input type="search" id="search" placeholder="Cari sesuatu..." />
+        </div>
+
+        <!-- Input: Range -->
+        <div id="rangeInput">
+          <label for="range">Pilih Rentang:</label>
+          <input type="range" id="range" />
+        </div>
+
+        <!-- Input: Checkbox -->
+        <div id="checkboxInput">
+          <label for="agreement">Setuju dengan ketentuan:</label>
+          <input type="checkbox" id="agreement" />
+        </div>
+
+        <!-- Input: Radio -->
+        <div id="radioInput">
+          <p>Pilih jenis kelamin:</p>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Laki-laki</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Perempuan</label>
+        </div>
+
+        <!-- Input: File -->
+        <div id="fileInput">
+          <label for="fileUpload">Unggah File:</label>
+          <input type="file" id="fileUpload" />
+        </div>
+
+        <!-- Input: Color -->
+        <div id="colorInput">
+          <label for="color">Pilih Warna:</label>
+          <input type="color" id="color" />
+        </div>
+
+        <!-- Input: Hidden -->
+        <div id="hiddenInput">
+          <input type="hidden" id="hiddenValue" value="12345" />
+        </div>
+
+        <!-- Submit Button -->
+        <div id="submitButton">
+          <button type="submit">Kirim</button>
+        </div>
+
+        <!-- Reset Button -->
+        <div id="resetButton">
+          <button type="reset">Reset</button>
+        </div>
+        <!-- Textarea -->
+        <div id="textareaInput">
+          <label for="textarea">Deskripsi:</label>
+          <textarea
+            id="textarea"
+            rows="3"
+            placeholder="Masukkan deskripsi..."
+          ></textarea>
+        </div>
+
+        <!-- Select -->
+        <div id="selectInput">
+          <label for="dropdown">Pilih Opsi:</label>
+          <select id="dropdown">
+            <option value="option1">Opsi 1</option>
+            <option value="option2">Opsi 2</option>
+            <option value="option3">Opsi 3</option>
+          </select>
+        </div>
+
+        <!-- Button: Submit -->
+        <div id="submitButton">
+          <button type="submit" disabled>Submit</button>
+        </div>
+
+        <!-- Button: Reset -->
+        <div id="resetButton">
+          <button type="reset">Reset</button>
+        </div>
+
+        <!-- Button: General -->
+        <div id="generalButton">
+          <button type="button" onclick="alert('Button Clicked!')">
+            Click Me
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="paragraphElement">
+      <h1>Paragraph Element</h1>
+      <p>
+        Ini adalah paragraf pertama. Paragraf digunakan untuk menulis teks
+        biasa.
+      </p>
+      <p>
+        Paragraf kedua memiliki <strong>teks yang ditekankan</strong> dan
+        <em>teks miring</em>.
+      </p>
+      <p>Paragraf ketiga digunakan untuk memberikan informasi tambahan.</p>
+    </div>
+    <div id="anchorElement">
+      <h1>Anchor Element</h1>
+      <a href="https://www.google.com" target="_blank">Kunjungi Google</a>
+      <a href="#divElement">Lihat Elemen Paragraf</a>
+      <a href="mailto:example@email.com">Kirim Email</a>
+    </div>
+
+     <!-- Selectors -->
+  <div id="selectorsElement">
+    <h1>Selectors (Class, ID)</h1>
+    <div class="classSelector">Ini elemen dengan class</div>
+    <div id="idSelector">Ini elemen dengan ID</div>
+  </div>
+
+  <!-- Attributes -->
+  <div id="attributesElement">
+    <h1>Attributes (Color, Background-Color, Border)</h1>
+    <div style="color: blue;">Teks berwarna biru</div>
+    <div style="background-color: yellow;">Teks dengan latar kuning</div>
+    <div style="border: 2px solid red;">Teks dengan border merah</div>
+  </div>
+
+  <!-- Box Model -->
+  <div id="boxModelElement">
+    <h1>Box Model (Padding, Margin, Width, Height)</h1>
+    <div class="box">Box dengan padding, margin, dan ukuran</div>
+  </div>
+
+  <!-- Display Properties -->
+  <div id="displayElement">
+    <h1>Display Properties (Block, Inline)</h1>
+    <div class="blockElement">Elemen block</div>
+    <span class="inlineElement">Elemen inline</span>
+    <span class="inlineElement">Elemen inline lainnya</span>
+  </div>
+
+  <!-- Pseudo Classes -->
+  <div id="pseudoElement">
+    <h1>Pseudo Classes (:hover, :active, :focus)</h1>
+    <button>Hover atau klik saya</button>
+    <input type="text" placeholder="Fokus ke sini">
+  </div>
+
+  <!-- FontAwesome Icons -->
+  <div id="fontAwesomeElement">
+    <h1>Import Icon FontAwesome</h1>
+    <i class="fa-solid fa-star"></i> Bintang
+    <i class="fas fa-heart"></i> Hati
+    <i class="fas fa-check"></i> Checklist
+  </div>
+
+  <!-- Fonts -->
+  <div id="fontsElement">
+    <h1>Fonts (Custom Fonts, Styling)</h1>
+    <p class="customFont">Ini font kustom</p>
+    <p class="styledFont">Ini font dengan styling</p>
+  </div>
+
+  <!-- Flexbox -->
+  <div id="flexboxElement">
+    <h1>Flexbox</h1>
+    <div class="flexContainer">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div id="gridElement">
+    <h1>Grid</h1>
+    <div class="gridContainer">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+      <div>Item 4</div>
+      <div>Item 3</div>
+      <div>Item 4</div>
+      <div>Item 3</div>
+      <div>Item 4</div>
+    </div>
+  </div>
+
+  <!-- Transform -->
+  <div id="transformElement">
+    <h1>Transform (Translate, Scale)</h1>
+    <div class="transformBox">Hover saya!</div>
+  </div>
+
+  <!-- Positions -->
+  <div id="positionElement">
+    <h1>Positions (Absolute, Relative, Fixed)</h1>
+    <div class="relativeBox">Relative</div>
+    <div class="absoluteBox">Absolute</div>
+    <div class="fixedBox">Fixed</div>
+  </div>
+
+  <!-- Z-Index -->
+  <div id="zIndexElement">
+    <h1>Z-Index</h1>
+    <div class="zIndexContainer">
+      <div class="zLow">Low Z-Index</div>
+      <div class="zHigh">High Z-Index</div>
+    </div>
+  </div>
+
+  <!-- Media Queries -->
+  <div id="mediaQueriesElement">
+    <h1>Media Queries</h1>
+    <div class="responsiveBox">Resize jendela browser</div>
+  </div>
+  </body>
+</html>
