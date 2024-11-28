@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    .container{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container > div{
+        border: 1px solid red;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Rock, Paper, Scissors</h1>
+        <p id="message"> Choose your move:</p>
+    <div class="choices">
+        <img src="rock.jpg" alt="rock" class="choice" id="rock">
+        <img src="paper.jpg" alt="paper" class="choice" id="paper">
+        <img src="scissors.jpg" alt="scissors" class="choice" id="scissors">
+    </div>
+    <div class="results-display">
+        <div class="choice-display">
+            <p>You choose:</p>
+            <img src="" alt="" id="player-choice" class="results-display">
+        </div>
+        <div class="choice-display">
+            <p>Computer choose:</p>
+            <img src="" alt="" id="computer-choice" class="results-display">
+        </div>
+    </div>
+    <p id="result"></p>
+    <button id="reset" class="reset-btn">Reset</button>
+    </div>
+<script src="rpsScript.js"></script>
+</body>
+</html>
