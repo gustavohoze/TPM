@@ -1,0 +1,42 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    height: 56px;
+    background: #F8F9FA;
+    display: grid;
+    place-items: center;
+}
+
+section{
+    min-height: calc(100vh - 56px - 56px);
+    padding: 3em;
+}
+
+section > div{
+    display: grid;
+}
+
+section > div:first-child{
+    min-height: calc(0.1 * (100vh - 56px - 56px));
+    place-items: center;
+
+}
+section > div:nth-child(2){
+    min-height: calc(0.7 * (100vh - 56px - 56px));
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    padding-block:2em ;
+    place-items: center;
+}
+section > div:last-child{
+    min-height: calc(0.1 * (100vh - 56px - 56px));
+    place-items: end;
+}
+
+#countriesContainer img{
+    height: 200px;
+}
